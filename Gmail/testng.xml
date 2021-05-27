@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5" parallel="tests">
+  <test thread-count="5" name="ChromeTest" parallel="classes">
+  	<parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <!-- <class name="testngtopic.TC004"/> -->
+      <class name="testngtopic.TC003"/>
+      <class name="testngtopic.TC002"/>
+     <!--  <class name="testngtopic.TC001"/> -->
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="FirefoxTest" parallel="classes">
+  	<parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <!-- <class name="testngtopic.TC004"/> -->
+      <class name="testngtopic.TC003"/>
+      <class name="testngtopic.TC002"/>
+     <!--  <class name="testngtopic.TC001"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
